@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { Telegraf } = require('telegraf')
 const bot = new Telegraf(process.env.BOT_TOKEN) //сюда помещается токен, который дал botFather
 bot.start((ctx) => ctx.reply('Welcome')) //ответ бота на команду /start
